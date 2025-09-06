@@ -1,3 +1,8 @@
+## Run 
+```shell
+/home/ubuntu/.cargo/bin/cargo run --color=always --package layoutparser-ort --example layout --profile dev --features=png
+
+```
 # layoutparser-ort
 
 A simplified port of [LayoutParser](https://github.com/Layout-Parser/layout-parser) for detecting layout elements on documents. Runs Detectron2 and YOLOX layout models from [unstructured-inference](https://github.com/Unstructured-IO/unstructured-inference/) in ONNX format through onnxruntime (bindings via [ort](https://github.com/pykeio/ort)). [Check out the examples for a quick start!](examples/)

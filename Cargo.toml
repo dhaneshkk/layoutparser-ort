@@ -13,21 +13,11 @@ exclude = [
     "examples/data/*"
 ]
 
-[[example]]
-name = "ocr"
-required-features = ["ocr", "png"]
 
 [[example]]
-name = "boxes"
+name = "layout"
 required-features = ["png"]
 
-[[example]]
-name = "predict_detectron2"
-required-features = ["png"]
-
-[[example]]
-name = "predict_yolox"
-required-features = ["png"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -44,6 +34,8 @@ tesseract = { version ="0.15.1", optional = true }
 thiserror = "1.0.59"
 tracing = "0.1.40"
 hocr-parser = { version = "0.1.0", optional = true }
+pdfium-render = "0.8"
+anyhow = "1.0"
 
 [features]
 default = []

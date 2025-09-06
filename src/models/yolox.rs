@@ -527,7 +527,7 @@ fn extract_bbox_etc(v: &Vec<f32>) -> [f32; 6] {
 #[derive(PartialEq)]
 pub(crate) enum Indexing {
     Xy,
-    Ij,
+    //Ij,
 }
 // from: https://github.com/jreniel/meshgridrs (licensed under MIT)
 pub(crate) fn meshgrid<T>(
